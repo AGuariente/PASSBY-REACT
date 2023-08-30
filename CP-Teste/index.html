@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Tarefas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .important {
+      font-weight: bold;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de Tarefas</h1>
+  <button onclick="adicionarTarefa()">Adicionar Nova Tarefa</button>
+  <button onclick="excluirConcluidas()">Excluir Tarefas Concluídas</button>
+  <button onclick="mostrarListaImportante()">Mostrar Lista de Tarefas Importantes</button>
+  <table id="tabela">
+    <tr>
+      <th>Descrição</th>
+      <th>Autor</th>
+      <th>Departamento</th>
+      <th>Importância</th>
+      <th>Valor</th>
+      <th>Duração</th>
+      <th>Concluída</th>
+    </tr>
+  </table>
+  <script>
+    const tabela = document.getElementById("tabela");
+    const tarefas = [];
+
+    function adicionarTarefa() {
+      const descricao = prompt("Digite a descrição da tarefa:");
+      const autor = prompt("Digite o autor da tarefa:");
+      const departamento = prompt("Digite o departamento da tarefa:");
+      const importancia = prompt("Digite a importância da tarefa:");
+
+      const tarefa = {
+        descricao: descricao,
+        autor: autor,
+        departamento: departamento,
+        importancia: importancia,
+        valor: "",
+        duracao: "",
+        concluida: false,
+      };
+
+      tarefas.push(tarefa);
+      atualizarTabela();
+    }
+
+    function excluirConcluidas() {
+      for (let i = tarefas.length - 1; i >= 0; i--) {
+        if (tarefas[i].concluida) {
+          tarefas.splice(i, 1);
+        }
+      }
+      atualizarTabela();
+    }
+
+    function mostrarListaImportante() {
+      const listaImportante = tarefas
+        .filter(tarefa => tarefa.importancia === "importante")
+        .map(tarefa => tarefa.descricao);
+
+      alert("Lista de Tarefas Importantes:\n\n" + listaImportante.join("\n"));
+    }
+
+    function atualizarTabela() {
+      tabela.innerHTML = `
+        <tr>
+          <th>Descrição</th>
+          <th>Autor</th>
+          <th>Departamento</th>
+          <th>Importância</th>
+          <th>Valor</th>
+          <th>Duração</th>
+          <th>Concluída</th>
+        </tr>
+        ${tarefas.map((tarefa, index) => `
+          <tr>
+            <td>${tarefa.descricao}</td>
+            <td>${tarefa.autor}</td>
+            <td>${tarefa.departamento}</td>
+            <td class="${tarefa.importancia === 'importante' ? 'important' : ''}">${tarefa.importancia}</td>
+            <td>${tarefa.valor}</td>
+            <td>${tarefa.duracao}</td>
+            <td><input type="checkbox" onclick="marcarConcluida(${index})" ${tarefa.concluida ? 'checked' : ''}></td>
+          </tr>
+        `).join('')}
+      `;
+    }
+
+    function marcarConcluida(index) {
+      tarefas[index].concluida = !tarefas[index].concluida;
+      atualizarTabela();
+    }
+  </script>
+</body>
+</html>
