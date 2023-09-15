@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousels from './components/carousels/Carousels';
 import Navbar from './components/navbar/NavbarTeste';
+import Home from './pages/Home';
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
   return (
     <div>
     <Navbar/>
+    <Home/>
     </div>
     
   )
