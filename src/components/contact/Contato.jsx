@@ -1,0 +1,28 @@
+import React, { Component } from 'react'
+import './Contato.css'
+import Table from './Table'
+
+export default class Contact extends Component {
+    render() {
+        return (
+            <div className="ContatoBody">
+
+                <div>
+                    <h2 className='contatoString'>Contato</h2>
+                    <p className='fdcString'>Formas de contatos</p>
+                    <p className='fdcStyle'>WhatsApp</p>
+                    <p className="fdcValor">(11) </p>
+                    <p className='fdcStyle'>Telefone</p>
+                    <p className="fdcValor">(11)</p>
+                    <p className='fdcStyle'>E-mail</p>
+                    <p className="fdcValor">@gmail.com</p>
+                    <Table/>
+
+                </div>
+
+
+            </div>
+            
+        )
+    }
+}
