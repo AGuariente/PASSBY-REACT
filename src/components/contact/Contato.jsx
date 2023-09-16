@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './Contato.css'
-import Table from './Table'
 
 export default class Contact extends Component {
     render() {
@@ -16,7 +15,6 @@ export default class Contact extends Component {
                     <p className="fdcValor">(11)</p>
                     <p className='fdcStyle'>E-mail</p>
                     <p className="fdcValor">@gmail.com</p>
-                    <Table/>
 
                 </div>
 
