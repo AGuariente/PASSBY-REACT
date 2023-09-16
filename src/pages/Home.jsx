@@ -61,6 +61,35 @@ function Home() {
           acessível para todos.
         </p>
       </div>
+
+      <Parallax strength={600} bgImage={Parking}>
+        <div className="content">
+          <div className="text-content">PASSBY</div>
+        </div>
+      </Parallax>
+
+      <div class="container">
+        <h2>Tecnologia NFC</h2>
+        <p>
+          A tecnologia NFC (Near Field Communication) desempenha um papel
+          fundamental na simplificação da comunicação e na criação de
+          experiências mais eficientes e convenientes em nossa vida cotidiana.
+          Com um simples toque ou aproximação entre dispositivos habilitados
+          para NFC, informações podem ser compartilhadas instantaneamente. Isso
+          é particularmente valioso em setores como pagamentos móveis, onde os
+          consumidores podem realizar transações de forma segura e rápida apenas
+          aproximando seus smartphones de um terminal NFC.
+        </p>
+
+        <p>
+          Além disso, o NFC é amplamente utilizado em cartões de acesso,
+          controle de transporte público e até mesmo no armazenamento de
+          informações em etiquetas NFC, tornando possível a automação de tarefas
+          e a criação de experiências personalizadas com facilidade. Em resumo,
+          a tecnologia NFC está transformando a maneira como interagimos com o
+          mundo digital e físico, tornando-a mais eficiente e conveniente.
+        </p>
+      </div>
     </div>
 
   );
