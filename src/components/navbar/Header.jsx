@@ -5,12 +5,12 @@ import GlobalStyles from "../fonts/GlobalStyles";
 const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
   background-color: #fff;
   height: 5em;
   color: #000;
-  padding: 0 10% ;
+  padding: 0 10%;
 `;
 
 const Logo = styled.h1`
@@ -25,12 +25,11 @@ const NavLinks = styled.nav`
     padding: 0;
     display: flex;
     gap: 3em;
-    
+    font-family: "Roboto";
   }
 
   li {
     font-size: 20px;
-    
   }
 
   a {

@@ -93,7 +93,6 @@ function Home() {
         </p>
       </div>
     </div>
-
   );
 }
 export default Home;
