@@ -1,0 +1,22 @@
+.login_body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+    height: 500px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    background-color: blueviolet;
+}
+
+.user_data {
+    display: flex;
+    margin-top: 3%;
+}

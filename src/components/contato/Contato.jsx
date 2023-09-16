@@ -13,13 +13,11 @@ export default class Contact extends Component {
                     <p className='fdcStyle'>WhatsApp</p>
                     <p className="fdcValor">(11) </p>
                     <p className='fdcStyle'>Telefone</p>
-                    <p className="fdcValor">(11)</p>
+                    <p className="fdcValor">(11) </p>
                     <p className='fdcStyle'>E-mail</p>
-                    <p className="fdcValor">@gmail.com</p>
-
+                    <p className="fdcValor">PassBy@gmail.com</p>
 
                 </div>
-
 
             </div>
             
