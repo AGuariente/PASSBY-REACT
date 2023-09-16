@@ -11,7 +11,10 @@ function Home() {
           <div className="text-content">PASSBY</div>
         </div>
       </Parallax>
+
+      <div className="container"><h2>teste</h2></div>
     </div>
+
   );
 }
 export default Home;
