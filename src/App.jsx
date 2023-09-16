@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/navbar/NavbarTeste';
 import Home from './pages/Home';
+import Header from './components/navbar/Header';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div>
-    <Navbar/>
+    <Header/>
     <Home/>
     </div>
     
