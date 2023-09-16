@@ -34,6 +34,33 @@ function Home() {
           conectando pessoas à mobilidade do futuro.
         </p>
       </div>
+
+      <Parallax strength={600} bgImage={Parking}>
+        <div className="content">
+          <div className="text-content">PASSBY</div>
+        </div>
+      </Parallax>
+
+      <div class="container">
+        <h2>O que fazemos</h2>
+        <p>
+          Na PassBy, tornamos a experiência de estacionamento incrivelmente
+          simples e amigável ao meio ambiente. Utilizando a tecnologia NFC,
+          permitimos que você armazene seu ticket virtualmente em seu celular,
+          eliminando a necessidade de papel e as incômodas filas para pagamento
+        </p>
+
+        <p>
+          Se você se encontrar em uma área sem cobertura de rede, não se
+          preocupe - nosso sistema automaticamente salva seu ticket e o envia
+          assim que a conexão for restabelecida. Além disso, na hora de sair,
+          nossa tecnologia de reconhecimento de placa por câmera agiliza o
+          processo de saída, tornando a experiência de estacionamento mais
+          eficiente e conveniente do que nunca. Na PassBy, estamos moldando o
+          futuro dos estacionamentos, tornando-o mais inteligente, sustentável e
+          acessível para todos.
+        </p>
+      </div>
     </div>
 
   );
