@@ -2,6 +2,8 @@ import React from "react";
 import "../pages/home.css";
 import { Parallax } from "react-parallax";
 import Parking from "../assets/images/parking.png";
+import Pass from "../assets/images/pass.png";
+import NFC from "../assets/images/nfc.png";
 
 function Home() {
   return (
@@ -35,7 +37,7 @@ function Home() {
         </p>
       </div>
 
-      <Parallax strength={600} bgImage={Parking}>
+      <Parallax strength={300} bgImage={Pass}>
         <div className="content">
           <div className="text-content">PASSBY</div>
         </div>
@@ -62,7 +64,7 @@ function Home() {
         </p>
       </div>
 
-      <Parallax strength={600} bgImage={Parking}>
+      <Parallax strength={300} bgImage={NFC}>
         <div className="content">
           <div className="text-content">PASSBY</div>
         </div>
