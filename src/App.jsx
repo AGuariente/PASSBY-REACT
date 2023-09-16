@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Header />
-      <PassByInfo />
+      <Home />
       <Footer />
     </div>
   );
