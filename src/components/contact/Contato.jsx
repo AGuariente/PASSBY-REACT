@@ -4,6 +4,7 @@ import './Contato.css'
 export default class Contact extends Component {
     render() {
         return (
+            
             <div className="ContatoBody">
 
                 <div>
@@ -15,6 +16,7 @@ export default class Contact extends Component {
                     <p className="fdcValor">(11)</p>
                     <p className='fdcStyle'>E-mail</p>
                     <p className="fdcValor">@gmail.com</p>
+
 
                 </div>
 
