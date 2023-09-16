@@ -1,20 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
-import GlobalStyles from '../fonts/GlobalStyles'; // Certifique-se de ajustar o caminho do arquivo conforme necessário
+import React from "react";
+import styled from "styled-components";
+import GlobalStyles from "../fonts/GlobalStyles";
 
-// Defina seu estilo para o header usando styled-components
 const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
+  flex-direction:row;
   align-items: center;
   background-color: #fff;
+  height: 5em;
   color: #000;
-  padding: 20px;
+  padding: 0 10% ;
 `;
 
 const Logo = styled.h1`
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 24px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 38px;
   margin: 0;
 `;
 
@@ -23,11 +24,13 @@ const NavLinks = styled.nav`
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 3em;
+    
   }
 
   li {
-    font-size: 18px;
+    font-size: 20px;
+    
   }
 
   a {
@@ -36,7 +39,6 @@ const NavLinks = styled.nav`
   }
 `;
 
-// Crie o componente de header
 function Header() {
   return (
     <>
@@ -46,7 +48,7 @@ function Header() {
         <NavLinks>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="">Home</a>
             </li>
             <li>
               <a href="#">Produto</a>
