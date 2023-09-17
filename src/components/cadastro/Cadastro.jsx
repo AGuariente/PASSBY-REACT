@@ -20,7 +20,11 @@ export default class Cadastro extends Component {
   handleSubmit=(x)=>{
     //desestrutura o state
     const { nome,email,telefone, senha,confirmarSenha } = this.state;
-    // Verificar se o email e a senha não estão em branco
+    // Verificar se o email e a senha não estão em branco\
+    if (isNaN(telefone) || telefone == ''){
+      alert ('O telefone precisa ser numérico')
+      return false;
+    }
     if (senha!==confirmarSenha){
       alert('Confirmar Senha direfente!')
       return false;
@@ -33,6 +37,7 @@ export default class Cadastro extends Component {
         localStorage.setItem('senha', senha);
 
         alert('Conta criada com sucesso! Você pode fazer login agora.');
+        window.location.href = '/Login';
     } else {
         alert('Por favor, preencha todos os campos.');
     }
