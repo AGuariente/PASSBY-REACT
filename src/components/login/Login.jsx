@@ -75,7 +75,7 @@ export default class Login extends Component {
                         
                     />
                     <p>&nbsp;</p>
-                    <p>Não possui conta?<Nav.Link className="NavLinks"  href="/cadastro">Criar conta</Nav.Link></p>
+                    <p>Não possui conta ?<Nav.Link className="NavLinks"  href="/cadastro">Criar conta</Nav.Link></p>
                     <Botao
                         className='entrarButton'
                         type='submit'
