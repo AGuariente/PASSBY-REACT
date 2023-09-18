@@ -18,4 +18,4 @@ React, {useEffect}
 React, {useState}
 React, { Component }
 
-Preencher a tela de cadastro e adicionar senha e email de sua escolha.
+Preencher a tela de cadastro e adicionar senha e email de sua escolha
