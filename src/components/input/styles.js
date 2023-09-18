@@ -12,7 +12,7 @@ export const InputCustomizado = styled.input`
     input::placeholder {
       color: #494949;
       font-size: 12px;
-      opacity 0.7;
+      opacity 0.6;
     }
 
 `
