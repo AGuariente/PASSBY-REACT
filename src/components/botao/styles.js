@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const BotaoCustomizado = styled.button`
   color: #FFF;
-  font-size: 10px;
+  font-size: 20px;
   border: 30px;
   background-color: #6a6a6a;
   border-radius: 8px;
